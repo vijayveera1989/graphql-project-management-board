@@ -1,12 +1,12 @@
 # Project Management App
 
-Starter project GraphQL
+**Starter project GraphQL**
 
-# Front end
+**Frontend**
    # ReactJS,
    # react-apollo,
    # ApolloClient,
-# Backend 
+**Backend**
    # NodeJS
    # Express
    # Express-Graphql
@@ -14,12 +14,12 @@ Starter project GraphQL
    # Passport
    # Mongoose
 
-### Setup
+**Set up**
 
 - Run `npm install --legacy-peer-deps` in the root of the project to install dependencies
 - Access the application at `localhost:4000` in your browser
 
-# DataTypes
+**Graphql Datatypes**
    # GraphQLSchema
    # GraphQLObjectType
    # GraphQLList
