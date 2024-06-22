@@ -3,9 +3,9 @@
 **Starter project GraphQL**
 
 **Frontend**
-   # ReactJS,
-   # react-apollo,
-   # ApolloClient,
+    ReactJS,
+    react-apollo,
+    ApolloClient,
 **Backend**
    # NodeJS
    # Express
@@ -34,3 +34,4 @@
     graphiql: true,
   })
 );`
+

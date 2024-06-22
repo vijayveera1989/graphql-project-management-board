@@ -1,20 +1,21 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const projectSchema = new mongoose.Schema({
-    name:{
-        type:String
-    },
-    description:{
-        type:String
-    },
-    status:{
-        type:String,
-        enum:['Not Started','In Progress','Completed']
-    },
-    clientId:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"Client"
-    }
-})
+const ProjectSchema = new Schema({
+  name: {
+    type: String,
+  },
+  description: {
+    type: String,
+  },
+  status: {
+    type: String,
+    enum: ["Not Started", "In Progress", "Completed"],
+  },
+  clientId: {
+    type: Schema.Types.ObjectId,
+    ref: "Client",
+  },
+});
 
-module.exports = mongoose.model("project",projectSchema);
+module.exports = mongoose.model("Project", ProjectSchema);
