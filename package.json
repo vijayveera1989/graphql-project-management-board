@@ -1,10 +1,13 @@
 {
   "dependencies": {
+    "@apollo/client": "^3.10.6",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-graphql": "^0.12.0",
     "graphql": "^16.9.0",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
@@ -15,8 +18,8 @@
   "description": "Starter project GraphQL",
   "main": "index.js",
   "scripts": {
-    "start" :"node server/index",
-    "dev" : "nodemon server/index.js"
+    "start": "node server/index",
+    "dev": "nodemon server/index.js"
   },
   "author": "",
   "license": "ISC"

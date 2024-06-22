@@ -4,8 +4,8 @@
 
 **Frontend**
     ReactJS,
-    react-apollo,
-    ApolloClient,
+    graphql,
+    @apollo/client,
 **Backend**
    # NodeJS
    # Express
