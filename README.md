@@ -1,6 +1,7 @@
 # Project Management App
 
 **Starter project GraphQL**
+![image](https://github.com/vijayveera1989/graphql-project-management-board/assets/91021285/b7b09c77-e63f-4d84-896f-2203fd395fb9)
 
 **Frontend**
     ReactJS,
