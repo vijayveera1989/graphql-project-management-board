@@ -1,8 +1,8 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
 import ClientRow from "./ClientRow.jsx";
-import { GET_CLIENTS } from "../queries/clientQuery.jsx";
-import Spinner from "./spinner.jsx";
+import { GET_CLIENTS } from "../queries/clientQueries.js";
+import Spinner from "./Spinner.jsx";
 
 function Clients() {
   const { loading, data, error } = useQuery(GET_CLIENTS);

@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { useMutation } from "@apollo/client";
-import { ADD_CLIENT_MUTATION } from "../mutations/mutations";
-import { GET_CLIENTS } from "../queries/clientQuery";
+import { ADD_CLIENT } from "../mutations/clientMutations";
+import { GET_CLIENTS } from "../queries/clientQueries";
 
 export default function AddClientModal() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
-  const [addClient] = useMutation(ADD_CLIENT_MUTATION, {
+  const [addClient] = useMutation(ADD_CLIENT, {
     variables: { name, email, phone },
     update(cache, { data: { addClient } }) {
       const { clients } = cache.readQuery({ query: GET_CLIENTS });
@@ -39,7 +39,7 @@ export default function AddClientModal() {
     <>
       <button
         type="button"
-        className="btn btn-primary"
+        className='btn btn-secondary'
         data-toggle="modal"
         data-target="#exampleModal"
       >
@@ -63,10 +63,13 @@ export default function AddClientModal() {
               </h5>
               <button
                 type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
+                className="close"
+                data-dismiss="modal"
                 aria-label="Close"
-              ></button>
+              >
+                {" "}
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
             <div className="modal-body">
               <form onSubmit={onSubmit}>
