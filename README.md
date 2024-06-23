@@ -27,7 +27,7 @@
     GraphQLID
     GraphQLString
 
-# setting the graphql handler by passing the schema (i,e query and mutation)
+Setting the graphql handler by passing the schema (i,e query and mutation)
 ` app.use(
   "/graphql",
   graphqlHTTP({
